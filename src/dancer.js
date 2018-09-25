@@ -6,13 +6,13 @@ var makeDancer = function(top, left, timeBetweenSteps, img, img2) {
 
 var Dancer = function(top, left, timeBetweenSteps, img, img2) {
   // use jQuery to create an HTML <span> tag
-  console.log(`<span class="dancer"><img src="${img}"></span>`);
+  console.log(`<span class='dancer'><img src='${img}'></span>`);
   if (img && img2) {
-    this.$node = $(`<span class="dancer"><img class="first" src="${img}"><img class="second" src="${img2}"></span>`); 
+    this.$node = $(`<span class='dancer'><img class='first' src='${img}'><img class='second' src='${img2}'></span>`); 
   } else if (img) {
-    this.$node = $(`<span class="dancer"><img src="${img}"></span>`); 
+    this.$node = $(`<span class='dancer'><img src='${img}'></span>`); 
   } else {
-    this.$node = $(`<span class="dancer"></span>`); 
+    this.$node = $(`<span class='dancer'></span>`); 
   }
   
   this.timeBetweenSteps = timeBetweenSteps;

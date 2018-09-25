@@ -1,4 +1,4 @@
-var makeBlinkyDancer = function(top, left, timeBetweenSteps, img = "assets/images/piggy.png") {
+var makeBlinkyDancer = function(top, left, timeBetweenSteps, img = 'assets/images/piggy.png') {
   const blinker = new BlinkyDancer(top, left, timeBetweenSteps, img);
   return blinker;
 };

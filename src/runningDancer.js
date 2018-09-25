@@ -1,4 +1,4 @@
-var makeRunningDancer = function(top, left, timeBetweenSteps, img = "assets/images/llama.gif") {
+var makeRunningDancer = function(top, left, timeBetweenSteps, img = 'assets/images/llama.gif') {
   const runner = new RunningDancer(top, left, timeBetweenSteps, img);
   return runner;
 };

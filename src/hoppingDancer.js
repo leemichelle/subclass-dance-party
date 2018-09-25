@@ -1,4 +1,4 @@
-var makeHoppingDancer = function(top, left, timeBetweenSteps, img = "assets/images/bunny.png") {
+var makeHoppingDancer = function(top, left, timeBetweenSteps, img = 'assets/images/bunny.png') {
   const hopping = new HoppingDancer(top, left, timeBetweenSteps, img);
   return hopping;
 };

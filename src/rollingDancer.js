@@ -1,4 +1,4 @@
-var makeRollingDancer = function(top, left, timeBetweenSteps, img = "assets/images/rolly.png") {
+var makeRollingDancer = function(top, left, timeBetweenSteps, img = 'assets/images/rolly.png') {
   const rolling = new RollingDancer(top, left, timeBetweenSteps, img);
   return rolling;
 };

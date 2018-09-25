@@ -1,4 +1,4 @@
-var makeCrawlingDancer = function(top, left, timeBetweenSteps, img = "assets/images/berry.png", img2 = "assets/images/turtle.png") {
+var makeCrawlingDancer = function(top, left, timeBetweenSteps, img = 'assets/images/berry.png', img2 = 'assets/images/turtle.png') {
   const crawler = new CrawlingDancer(top, left, timeBetweenSteps, img, img2);
   return crawler;
 };
@@ -16,6 +16,6 @@ CrawlingDancer.prototype.constructor = CrawlingDancer;
 CrawlingDancer.prototype.step = function() {
   this.oldStep();
   this.position -= 10;
-  // var $first = .find(".first");
+  // var $first = .find('.first');
   this.$node.css({'left': `${this.position}px`});
 };
