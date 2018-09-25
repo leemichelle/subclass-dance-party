@@ -11,24 +11,4 @@ describe('runningDancer', function() {
   it('should have a jQuery $node object', function() {
     expect(runningDancer.$node).to.be.an.instanceof(jQuery);
   });
-
-  it('should have a step function that makes its node run', function() {
-    sinon.spy(runningDancer.$node, 'css');
-    runningDancer.step();
-    expect(runningDancer.$node.css.called).to.be.true;
-  });
-
-  describe('dance', function() {
-    it('should call step at least once per second', function() {
-      sinon.spy(runningDancer, 'step');
-      expect(runningDancer.step.callCount).to.be.equal(0);
-      clock.tick(timeBetweenSteps); // ? it seems an extra tick is necessary...
-      clock.tick(timeBetweenSteps);
-
-      expect(runningDancer.step.callCount).to.be.equal(1);
-
-      clock.tick(timeBetweenSteps);
-      expect(runningDancer.step.callCount).to.be.equal(2);
-    });
-  });
 });
