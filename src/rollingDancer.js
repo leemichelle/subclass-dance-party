@@ -8,14 +8,11 @@ var RollingDancer = function(top, left, timeBetweenSteps, idx, img) {
   this.oldStep = Dancer.prototype.step;
   this.rotation = 0;
   this.noise = 'AHHH';
+  this.$node.addClass('rolly');
 };
 
 RollingDancer.prototype = Object.create(Dancer.prototype);
 RollingDancer.prototype.constructor = RollingDancer;
 
 
-RollingDancer.prototype.step = function() {
-  this.oldStep();
-  this.rotation += 30;
-  this.$node.css({'transform': `rotate(${this.rotation}deg)`});
-};
+RollingDancer.prototype.step = function() {};

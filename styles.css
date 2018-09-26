@@ -8,12 +8,12 @@ body{
   background-repeat: no-repeat;
   background-image: url("assets/images/background.jpg");
   background-size: cover;
+  font-family: 'Bowlby One SC', cursive, 'Arial';
   text-align: center;
 }
 
 .title, .addDancerButton, .lineUpButton{
   padding:5px 12px;
-  font-family: 'Bowlby One SC', cursive, 'Arial';
   float: center;
 }
 
@@ -57,10 +57,51 @@ img {
 
 @keyframes slideleft {
   from {
-    margin-left: 100%;
+    left: 90%;
   }
   to {
-    margin-left: 0%;
+    left: 0%;
+  }
+}
+
+/**************************************/
+/**ROLLY animation ********************/
+/**************************************/
+/**************************************/
+.rolly {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 

@@ -14,6 +14,4 @@ var RunningDancer = function(top, left, timeBetweenSteps, idx, img) {
 RunningDancer.prototype = Object.create(Dancer.prototype);
 RunningDancer.prototype.constructor = RunningDancer;
 
-RunningDancer.prototype.step = function() {
-
-};
+RunningDancer.prototype.step = function() {};

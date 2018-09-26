@@ -37,8 +37,19 @@ Dancer.prototype.lineUp = function () {
 };
 
 Dancer.prototype.speak = function() {
-  if(this.$node.has('.speech-bubble').length === 0) {
-    this.$node.append(`<span class=speech-bubble>${this.noise}</span>`);
+  if (this.$node.has('.speech-bubble').length === 0) {
+    this.$node.append(`<span class='speech-bubble'>${this.noise}</strong>`);
+  } else {
+    this.$node.find('.speech-bubble').text(`${this.noise}`);
   }
-  
+};
+
+Dancer.prototype.sayHi = function() {
+  if (this.$node.has('.speech-bubble').length === 0) {
+    this.$node.append(`<span class='speech-bubble'>Hi Friend!</span>`);
+  } else {
+    this.$node.find('.speech-bubble').text('Hi Friend!');
+  }
+
+  //TODO: make the bubble disappear after a bit
 };

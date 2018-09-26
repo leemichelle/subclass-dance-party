@@ -3,6 +3,7 @@
 <head>
   <title>Mocha Spec Runner</title>
   <link rel="stylesheet" href="lib/mocha/mocha.css">
+  <link rel="stylesheet" href="assets/stylesheets/font-awesome.min.css">
   <script src="lib/jquery.js"></script>
   <script src="lib/mocha/mocha.js"></script>
   <script src="lib/chai/chai.js"></script>
@@ -10,7 +11,7 @@
   <script>
     mocha.setup('bdd');
     window.expect = chai.expect;
-    $(function() {
+    $(function () {
       window.mochaPhantomJS ? mochaPhantomJS.run() : mocha.run();
     });
   </script>
